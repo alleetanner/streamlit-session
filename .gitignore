@@ -129,3 +129,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+alignment_viewer_p53.fasta
+Barcelona_rent_price.csv
+demo2.py
+demoALIGN.py
+demoAPP.py
+demoIMDB.py
+generic_logo.png~
+manhattan_data.csv
+data/msoa_2022-11-24.csv
+data/msoa_centroids.csv
+data/SOURCE.txt
