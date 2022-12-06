@@ -3,18 +3,23 @@ import pandas as pd
 import altair as alt
 
 
+st.image("header_bar.png", use_column_width=True)
 st.header("A simple demonstration of Streamlit")
-
 st.info(f"We are currently using version {st.__version__}")
 
-st.write("Hello from the JGI!")
+st.write("We can create text like this!")
 
-st.button("Here is a button.")
+st.button(
+    "Do not press this button.",
+    help="This is a button. It currently doesn't do anything.")
 
 st.sidebar.image("generic_logo.png")
 
-st.sidebar.write("This is a sidebar")
+st.sidebar.info("We can put stuff in the sidebar too!")
 
+minyear = st.sidebar.slider("A range slider", 1800, 2020)
+
+# my_line = st.sidebar.radio("Select things", ["A", "B", "C"],
 my_line = st.sidebar.radio(
     "Select things",
     ["Buying power", "Dollar Value", "Inflation Rate"],
@@ -23,7 +28,6 @@ my_line = st.sidebar.radio(
 user_data = st.sidebar.file_uploader(
     "Upload a file",
     help="This is an upload button.")
-
 
 if user_data is not None:
 
